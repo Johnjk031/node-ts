@@ -12,9 +12,11 @@
   "license": "ISC",
   "dependencies": {
     "require": "^2.4.20",
-    "requirejs": "^2.3.6"
+    "requirejs": "^2.3.6",
+    "sanitize-html": "^2.4.0"
   },
   "devDependencies": {
-    "@types/node": "^16.7.1"
+    "@types/node": "^16.7.1",
+    "@types/sanitize-html": "^2.3.2"
   }
 }
