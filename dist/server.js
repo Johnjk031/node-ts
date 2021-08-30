@@ -15,12 +15,16 @@ server.listen(port, function(error: any) {
     }
 })
 */
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const mod = require('./modules');
 const sanitizeHtml = require('sanitize-html');
+var sorted = require('is-sorted');
 let x = mod.alphabet;
 x();
 let testData1 = 'This is a safe string';
 let testData2 = 'This is a <strong>unsafe</strong> string, because it contains HTML';
+var sorted = require('is-sorted');
+console.log(sorted([3, 2, 1]));
 function printUnsafe(fromUser) {
     // Hoppsan! Om fromUser innehåller HTML, så ska den inte skrivas ut
     console.log(sanitizeHtml(fromUser, {
